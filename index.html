@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+
+    <p>
+      Welcome to the game! Repeat back the pattern by pressing buttons.
+    </p>
+
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    <div id="countdown"></div>
+
+    <div id="gameButtonArea">
+      <button
+        id="button1"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone(1)"
+        onclick="guess(1)"
+      >
+        <img
+          id="img1"
+          style="display:none;"
+          src="https://cdn.glitch.com/bb942363-d6b9-4458-bf65-a41120793028%2Faquatic_turtle.jpg?v=1616526205409"
+          width="150"
+          height="150"
+        />
+      </button>
+
+      <button
+        id="button2"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone(2)"
+        onclick="guess(2)"
+      >
+        <img
+          id="img2"
+          style="display:none;"
+          src="https://cdn.glitch.com/bb942363-d6b9-4458-bf65-a41120793028%2Fdog_lying_193003.jpg?v=1616526226305"
+          width="150"
+          height="150"
+        />
+      </button>
+
+      <button
+        id="button3"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone(3)"
+        onclick="guess(3)"
+      >
+        <img
+          id="img3"
+          style="display:none;"
+          src="https://cdn.glitch.com/bb942363-d6b9-4458-bf65-a41120793028%2Fred_parrot_560586.jpg?v=1616526166637"
+          width="150"
+          height="150"
+        />
+      </button>
+
+      <button
+        id="button4"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone(4)"
+        onclick="guess(4)"
+      >
+        <img
+          id="img4"
+          style="display:none;"
+          src="https://cdn.glitch.com/bb942363-d6b9-4458-bf65-a41120793028%2Fanimal_bokeh_close_up_eating_fur_hamster_paw_597782.jpg?v=1616526184370"
+          width="150"
+          height="150"
+        />
+      </button>
+      <button
+        id="button5"
+        onmousedown="startTone(5)"
+        onmouseup="stopTone(5)"
+        onclick="guess(5)"
+      >
+        <img
+          id="img5"
+          style="display:none;"
+          src="https://cdn.glitch.com/bb942363-d6b9-4458-bf65-a41120793028%2Flooked_up_at_the_black_cat_hd_picture.jpg?v=1616526251491"
+          width="150"
+          height="150"
+        />
+      </button>
+    </div>
+  </body>
+</html>
